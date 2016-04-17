@@ -1,7 +1,3 @@
-$(function(){
-  var logos = getLogos().logos;
-});
-
 //logos object that holds all logos and their critertia
 //null values indicates any category is accepted.
 function getLogos(){
@@ -83,3 +79,39 @@ function getLogos(){
   };
   return AllLogos;
 }
+
+function appendImg(logo, color){
+  var html = "";
+  var src = logo.gray;
+  
+  //if color is true set the image src to the colored one
+  if(color){
+    src = logo.color;
+  }
+
+  html+= "<li class='logo'><img";
+  html+= " src='" + src + "' alt='logo image'></li>";
+  return html;
+}
+
+//Displays logos accoding to the search criteria provided
+function showLogos(logos, program, school){
+  var color = false;
+  var img;
+  $('.logo-list').html("");
+
+  $.each(logos, function(index, logo){
+    //logic to check matches will go here 
+
+    //get the HTML to append the specific image
+    img = appendImg(logo, color);
+    $('.logo-list').append(img);
+  });
+}
+
+$(function(){
+  var program = "loan", school = "k-12";
+  var logos = getLogos().logos;
+
+  showLogos(logos, program, school)
+});
