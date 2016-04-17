@@ -32,7 +32,7 @@ ul{
 .filters{
 	background-color: #ddd;
 	padding: 4em 0;
-	margin: 2em 0 6em 0;
+	margin: 2em 0 4em 0;
 }
 
 .program, .school{
@@ -56,5 +56,21 @@ option{
 	border: none;
 }
 
+/* LOGOS SECTION*/
+.logo-list{
+	width: 100%;
+}
+
+.logo{
+	display: inline-block;
+	width: 49%;
+	margin: 0;
+	padding: 2em 0;
+}
+
+.logo img{
+	max-height: 75px;
+	width: auto;
+}
 
 
