@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Logo Search</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link href='//fonts.googleapis.com/css?family=Oswald|Pinyon+Script' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
@@ -12,18 +13,17 @@
     <header class="mainHdr">
       <h1>Society Education Programs</h1>
       <form class="filters">
-        <select name="funding">
-        <label>Program Type:</label>
+        <select name="program" class="program">
           <option selected="selected" value="all">ALL PROGRAMS</option>
           <option value="scholarship">SCHOLARSHIP</option>
           <option value="loan">LOAN</option>
         </select>
-        <select name="school">
+        <select name="school" class="school">
           <option selected="selected" value="all">ALL SCHOOLS</option>
           <option value="all-grades">K - 12</option>
           <option value="highschool">HIGH SCHOOL</option> 
         </select>
-        <input type="submit" value="SEARCH">
+        <input class="submitBtn" type="submit" value="SEARCH">
       </form>
     </header>
     <section class="logos-holder">

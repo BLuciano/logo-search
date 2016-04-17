@@ -1,0 +1,60 @@
+/*GLOBAL STYLES*/
+html{
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #444;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.wrapper{
+	width: 100%;
+	text-align: center;
+	padding: 3em 2.5%;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*HEADER STYLES*/
+.mainHdr h1{
+	font-family: 'Pinyon Script', cursive;
+	color: #820303;
+	font-size: 2.5em
+}
+
+.filters{
+	background-color: #ddd;
+	padding: 4em 0;
+	margin: 2em 0 6em 0;
+}
+
+.program, .school{
+	width: 95%;
+	padding: 1em;
+	margin: 1em 2.5%;
+	font-size: .85em;
+	color: #333;
+}
+
+option{
+	color: #820303;
+}
+
+.submitBtn{
+	background-color: #820303;
+	margin-top: 25px;
+	padding: .75em 2em;
+	color: #ddd;
+	font-size: .80em;
+	border: none;
+}
+
+
+
