@@ -94,14 +94,31 @@ function appendImg(logo, color){
   return html;
 }
 
+function searchMatch(logo, program, school){
+  var color = false;
+  if(program === 'all' && school === 'all'){
+    color = true;
+  }
+  if(program === 'all' && logo.school === school){
+    color = true;
+  }
+  if(school === 'all' && logo.program === program){
+    color = true;
+  }
+  if(logo.program === program && logo.school === school){
+    color = true;
+  }
+  return color;
+}
+
 //Displays logos accoding to the search criteria provided
 function showLogos(logos, program, school){
-  var color = false;
-  var img;
+  var color, img;
   $('.logo-list').html("");
 
   $.each(logos, function(index, logo){
-    //logic to check matches will go here 
+    //check to see criteria match and set image to be colored or not
+    color = searchMatch(logo, program, school);
 
     //get the HTML to append the specific image
     img = appendImg(logo, color);
@@ -110,7 +127,7 @@ function showLogos(logos, program, school){
 }
 
 $(function(){
-  var program = "loan", school = "k-12";
+  var program = "", school = "";
   var logos = getLogos().logos;
 
   showLogos(logos, program, school)
