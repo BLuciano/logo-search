@@ -130,5 +130,12 @@ $(function(){
   var program = "", school = "";
   var logos = getLogos().logos;
 
+  $('.filters').submit(function(e){
+    e.preventDefault();
+    program = $('.program').val();
+    school = $('.school').val();
+    showLogos(logos, program, school);
+  })
+
   showLogos(logos, program, school)
 });
