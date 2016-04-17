@@ -11,66 +11,91 @@ html{
 }
 
 .wrapper{
-	width: 100%;
-	text-align: center;
-	padding: 3em 2.5%;
+  width: 100%;
+  text-align: center;
+  padding: 3em 2.5%;
 }
 
 ul{
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /*HEADER STYLES*/
 .mainHdr h1{
-	font-family: 'Pinyon Script', cursive;
-	color: #820303;
-	font-size: 2.5em
+  font-family: 'Pinyon Script', cursive;
+  color: #820303;
+  font-size: 2.5em
 }
 
 .filters{
-	background-color: #ddd;
-	padding: 4em 0;
-	margin: 2em 0 4em 0;
+  background-color: #ddd;
+  padding: 4em 0;
+  margin: 2em 0 4em 0;
 }
 
 .program, .school{
-	width: 95%;
-	padding: 1em;
-	margin: 1em 2.5%;
-	font-size: .85em;
-	color: #333;
+  width: 95%;
+  padding: 1em;
+  margin: 1em 2.5%;
+  font-size: .85em;
+  color: #333;
 }
 
 option{
-	color: #820303;
+  color: #820303;
 }
 
 .submitBtn{
-	background-color: #820303;
-	margin-top: 25px;
-	padding: .75em 2em;
-	color: #ddd;
-	font-size: .80em;
-	border: none;
+  background-color: #820303;
+  margin-top: 25px;
+  padding: .75em 2em;
+  color: #ddd;
+  font-size: .80em;
+  border: none;
 }
 
 /* LOGOS SECTION*/
 .logo-list{
-	width: 100%;
+  width: 100%;
 }
 
 .logo{
-	display: inline-block;
-	width: 49%;
-	margin: 0;
-	padding: 2em 0;
+  display: inline-block;
+  width: 49%;
+  margin: 0;
+  padding: 2em 0;
 }
 
 .logo img{
-	max-height: 75px;
-	width: auto;
+  max-height: 75px;
+  width: auto;
 }
 
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 500px){
+  .program, .school{
+    display: inline-block;
+    width: 45%;
+    padding: 1em;
+    margin: 1em 1.25%;
+  }
+
+  .logo{
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 750px){
+  .wrapper{
+    width: 750px;
+    margin: 0 auto;
+  }
+
+  .logo{
+    width: 24%;
+  }
+}
 
